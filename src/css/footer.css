@@ -3,12 +3,13 @@
 	background-size: cover;
 
 }
+
 .footer-menu{
 	display:flex;
 	flex-direction: column;
 	justify-content: center;
 	padding: 1rem;
-}
+} 
 .footer-list{
 	margin:0;
 	list-style: none;
@@ -47,14 +48,13 @@
 }
 
 @media (min-width: 1200px) { 
-	.footer-menu{
-	display:flex;
-	flex-direction: row;
-    align-items: center;
-    cursor: pointer;
-	}
+	.footer-menu {
+        display:flex;
+        flex-direction: column;
+		align-items: center;
+	} 
 	.footer-list{
-	max-width: var(--max-width);
+	
 	display: flex;
 	justify-content: space-evenly;
 	}
@@ -62,10 +62,10 @@
 	color:	#abb7c4;
 	padding: 0 2rem;
 	}
-	.logo-footer{
-	display: flex;
-	justify-content: start;
-	padding-top:0.5rem;
+	.logo-footer {
+    display: flex;
+    justify-content: center;
+    padding-top: .5rem;
 	}
 	.logo-footer img{
 		max-width: 40%;
