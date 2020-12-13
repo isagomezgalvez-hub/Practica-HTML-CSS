@@ -1,0 +1,138 @@
+.header-single{
+	display: none;
+	position: relative;
+	width: 100%;
+	background: url(../img/header_into_the_wild.jpg) no-repeat 50% 50%;
+	background-size: cover;
+	height: 35vh;
+}
+
+.header-single::before{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 35vh;
+	background: -webkit-gradient(linear,left top,left bottom,from(transparent),to(rgba(0,0,0,.7)));
+	background: -webkit-linear-gradient(top,transparent,rgba(0,0,0,.7));
+	background: linear-gradient(180deg,transparent,rgba(0,0,0,.7)); 
+}
+.header-single .contenido{
+	color: white;
+	text-transform: uppercase;
+}
+
+.favorite img{
+	left: 0;
+	width: 1rem;
+	height: 1rem;	
+}
+
+.header-single .title{
+	width: 50%;	
+}
+.title h1{
+	font-size: 2rem;
+	color: #ffffff; 
+	font-weight: 700;
+	text-transform: none;
+	margin: 0 0 2rem;
+	padding: 0rem;
+}
+
+.punctuation {
+	width: 100%;
+	margin: 0;
+}
+
+.flex-card-container{
+	align-items: center;
+}
+.flex-card.single{
+	width: 100%;
+}
+
+.flex-card.video-contaniner{
+    margin-top: 40px;
+	padding: 0px;
+}
+.flex-card h2{
+	font-size: 1.2rem;
+	line-height: 1.5rem;
+	font-weight: 300;
+	text-transform: uppercase;
+}
+.flex-card span{
+	opacity: 0.7;
+	margin-right: 0.3rem;
+}
+
+.single-video{
+	width: 100%;
+
+}
+
+.relacionados .flex-card-container{
+	margin-top: 2rem;
+}
+
+.relacionados .title h3, .full-description .title h3{
+	margin-top:2rem;
+	margin-left: 0.5rem;
+	border-bottom: 1px solid #233a50;
+	padding-bottom: 0.8rem;
+	text-transform: uppercase;
+	font-size: 0.9rem;
+	text-transform: uppercase;
+}
+
+.relacionados .flex-card .thumbails{
+	border-radius: 4px;
+	width: 100%;
+	background-size: cover;
+}
+.relacionados .flex-card a{
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom:10rem;
+	right: 0;
+	display: flex;
+    align-items: center;
+	justify-content: center;
+}
+.relacionados .flex-card a img:hover{
+	opacity: 0.6;
+    transition: all 0.5s ease-out;
+}
+
+@media(min-width:768px){
+	.flex-card-container {
+    display: flex;
+    flex-wrap: wrap;
+	}
+	.relacionados .flex-card a{
+	position: absolute;
+	bottom:7rem;
+	}
+
+
+@media(min-width: 1200px){
+	.header-single{
+		display: flex;
+	}
+
+	.flex-card-container {
+    display: flex;
+	flex-wrap: nowrap;
+	}
+	.flex-card.single{
+	padding:0.8rem;
+	}
+
+	.relacionados .flex-card a{
+	position: absolute;
+	bottom:8rem;
+	}
+}

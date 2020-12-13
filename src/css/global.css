@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400,700&family=Nunito:wght@300&display=swap');
+
+
+:root{
+  --navbar-height:4rem;
+  --max-width:1280px;
+}
+* {	
+	font-family: 'Dosis', sans-serif;
+}
+html{
+	scroll-behavior: smooth;
+}
+a, a:link, a:visited, a:focus{
+	text-decoration: none;
+	color: #dd003f;
+}
+header{
+	margin-top:var(--navbar-height);
+}
+.wrapper{
+	background-color: #020d18;
+	color:white;
+	padding: 3rem 1rem;
+	margin:0;
+}
+.main-container{
+	max-width: var(--max-width);
+	margin: 0 auto;
+}
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Dosis', sans-serif;
+}
+h1{
+	font-size: 1.5rem;
+	padding: 0rem 0.5rem;
+}
+h2{
+	font-size: 1rem;
+}
+p{
+	font-size: 1rem;
+    color: #abb7c4;
+    font-weight: 300;
+    line-height: 1.5rem;
+}
+

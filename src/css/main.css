@@ -1,0 +1,215 @@
+
+.flex-card-container{
+	 display: flex;
+	 flex-direction: row;
+	 flex-wrap: wrap;
+}
+.flex-card{
+	position: relative;
+	padding:0.5rem;
+	width: 50%;
+}
+.flex-card h2 {
+	color:white;
+}
+
+.body article img{
+	width: 100%;
+	border-radius:8px;
+}
+.card-img-top{
+	position: absolute;
+	top:1rem;
+	right: 1rem;
+	width: 20px;
+	height: 20px; 
+	background:url(../img/no-favorito.svg);
+
+}
+#favorite-checkbox, #favorite-checkbox2, #favorite-checkbox3, #favorite-checkbox4{
+	display: none; 
+}
+.favorite-label{
+	position: absolute;
+	top:-0.2rem;
+	right: -0.2rem;
+	width: 25px;
+	height: 25px; 
+}
+
+#favorite-checkbox:checked ~ .favorite-label, #favorite-checkbox2:checked ~ .favorite-label,
+#favorite-checkbox3:checked ~ .favorite-label, #favorite-checkbox4:checked ~ .favorite-label{
+	background:url(../img/favorito.svg);
+	-webkit-animation: flip-in-hor-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: flip-in-hor-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.oculto{
+	position: absolute;
+	top:0.5rem;
+	width: calc(100% - 15px);
+	height: calc(100% - 20px);
+	opacity: 0;
+}
+
+.oculto:hover{
+	background: rgba(0, 0, 0, 0.714);
+	border-radius:8px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	opacity: 1;
+	transition: 0.5s ease-in-out;
+	overflow: hidden;
+}
+.details{
+	position: absolute;
+	padding: 1rem;
+	font-weight: 300;
+	position: absolute;
+	font-size: 0.9;
+	bottom: 0rem;
+}
+
+.details .title{
+	font-size: 1.2rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin: 0;
+}
+.details .sipnosis{
+	font-size: 0.8rem;
+}
+.rating{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin: 0rem;
+	font-size: 0.8rem;
+	color:#abb7c4;
+}
+.rating .icon-star{
+	width: 0.6rem;
+	height: 0.6rem;
+}
+.punctuation{
+	width: 100%;
+	
+}
+.details span{
+	font-weight: 400;
+	font-size: 0.8rem;
+	margin-left: 0px;
+}
+
+.sipnosis{
+	padding:0;
+	margin: 0;
+	color:white;
+
+}
+#Series, #Pelis{
+	margin-top:4rem;
+}
+#Series .flex-card-container, #Pelis .flex-card-container{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	object-fit: fill;
+	overflow: hidden;
+}
+#Series .flex-card, #Pelis .flex-card{
+	min-width: 80%;
+}
+
+.thumbails{
+	width: 100%;
+	border-radius:4px;
+	background-size: cover;
+	border:none;
+	-webkit-transition: -moz-transform .3s ease-out; 
+	-moz-transition: -webkit-transform .3s ease-out;
+}
+
+
+#Series .thumbails:hover, #Pelis .thumbails:hover, #Favoritos .thumbails:hover{
+	position: relative;
+	border:2px solid #dd003f;
+	z-index: 99;
+	opacity: 0.7;
+}
+
+#Series .title, #Pelis .title{
+	text-transform: capitalize;
+}
+#Series .title:hover, #Pelis .title:hover{
+	color: #dd003f;
+}
+
+.favorite-hard{
+		opacity: 0.8;
+		width: 1rem;
+		height: 1rem;
+		border:none;
+}
+
+@media(min-width:768px){
+	.login {
+	width: 20%;
+	}
+	.details ul{
+	list-style: disc;
+	}
+	.flex-card-container.tablet{
+		flex-wrap: nowrap;
+	}
+	
+	#Series .flex-card, #Pelis .flex-card{
+		min-width: 30%;
+	}
+	.favorite-hard{
+		width: 2rem;
+		height: 2rem;
+	}
+}
+@media(min-width:1200px){
+	.details{
+	padding: 1.5rem;
+	bottom: 1.5rem;
+	}
+	.details .sipnosis{
+		font-size: 1.2rem;
+	}
+	.rating .icon-star{
+	width: 1rem;
+	height: 1rem;
+	}
+	.punctuation{
+	width: 40%;
+	}
+	.details .punctuation{
+	font-size: 1.2rem;
+	}
+	.details span{
+	font-size: 1.5rem;
+	}	
+	#Series .flex-card, #Pelis .flex-card{
+		min-width: 20%;
+	}
+	.favorite-hard{
+		width: 1.5rem;
+		height: 1.5rem;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,205 @@
+
+.content-comingSoon{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 80vh;
+	width: 80%;
+	margin: 2rem auto;
+}
+
+.content-comingSoon h1{
+	font-size: 2rem;
+	line-height: 2rem;
+	display: flex;
+	text-align: center;
+}
+
+
+.content-comingSoon h2{
+	font-size: 1rem;
+	line-height: 1rem;
+	font-weight: 300;
+	text-transform: uppercase;
+	margin-top: 3rem;
+}
+.content-comingSoon p{
+	text-align: center;
+	font-size: 1rem;
+	line-height: 1rem;
+}
+
+
+
+.contador{
+		display: flex;
+		flex-wrap: nowrap;
+		justify-content: center;
+		align-items: center;
+		margin:0rem;
+		padding:0rem;
+		border:8px;
+}
+
+.field{
+		display:flex;
+		flex-direction: column;
+		text-align: center;
+		font-size: 3rem;
+		background:rgba(77, 76, 76, 0.199);
+		text-transform: uppercase;
+		padding:0.5rem;
+		border-radius: 10px;
+    	margin: 5px;
+
+}
+
+.field span{
+		font-size: 0.8rem ;
+		font-weight: 300;
+}
+.newsletter{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	padding:1rem;
+	color: white;
+}
+
+.content-comingSoon .button{
+	padding:0.5rem;
+	font-size: 1rem;
+	min-width: 15rem;
+	background-color: #dd003f;
+	text-transform: uppercase;
+	border: none;
+	margin-bottom:0rem ;
+	text-align: center;
+	color: white;
+
+}
+
+.newsletter input[type='email']{
+    color: #d0ddeb;
+    font-weight: 300;
+    text-transform: none;
+    background-color: transparent;
+    border: 1px solid #405266;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+	border-radius: 3px;
+	margin-bottom: 1rem;
+}
+input[type=email]:focus{
+    outline: none;
+}
+
+@media (hover:hover) {
+  .content-comingSoon .button:hover {
+	background-color:#ad0031;
+	transition: 0.3s ease-in-out;
+  }
+}
+@media(min-width:768px){
+	.content-comingSoon h1{
+		font-size:3rem;
+		line-height: 3rem;
+		padding:0;
+		margin:0;
+		display: flex;
+		text-align: center;
+	}
+	.content-comingSoon h2{
+		margin-top: 0rem;
+	}
+	.content-comingSoon p{
+		text-align: center;
+		font-size: 1.5rem;
+		line-height: 1.5rem;
+	}
+	.contador{
+			display: flex;
+			flex-wrap: nowrap;
+			justify-content: center;
+			align-items: center;
+			margin:2rem 0;
+			padding:1rem 2rem;
+			border:8px;
+	}
+
+	.field{
+			display:flex;
+			flex-direction: column;
+			text-align: center;
+			font-size: 2rem;
+			background:rgba(77, 76, 76, 0.199);
+			text-transform: uppercase;
+			padding:0.5rem;
+			border-radius: 10px;
+			margin: 5px;
+
+	}
+	.newsletter{
+	flex-wrap: nowrap;
+	justify-content: center;
+	}
+	
+	.newsletter input[type='email'] {
+	margin-bottom: 0rem;
+	}
+
+	
+}
+@media (min-width:1200px) {
+	.content-comingSoon h1{
+		font-size:4rem;
+		line-height: 4rem;
+		padding:0;
+		margin:0;
+		display: flex;
+		text-align: center;
+	}
+	.content-comingSoon h2{
+		margin-top: 0rem;
+	}
+	.content-comingSoon p{
+		text-align: center;
+		font-size: 1.5rem;
+		line-height: 1.5rem;
+	}
+
+	.contador{
+			display: flex;
+			flex-wrap: nowrap;
+			justify-content: center;
+			align-items: center;
+			margin:2rem 0;
+			padding:1rem 2rem;
+			border:8px;
+	}
+
+	.field{
+			display:flex;
+			flex-direction: column;
+			text-align: center;
+			font-size: 3rem;
+			background:rgba(77, 76, 76, 0.199);
+			text-transform: uppercase;
+			padding:2.5rem;
+			border-radius: 10px;
+			margin: 5px;
+
+	}
+	.newsletter{
+		flex-wrap: nowrap;
+	}
+	.newsletter input[type='email']{
+		margin-bottom: 0rem;
+	}
+	.content-comingSoon .button{
+	padding:0.5rem;
+	font-size: 1rem;
+	min-width: 10rem;
+	}
+}
